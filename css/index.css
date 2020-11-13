@@ -654,3 +654,54 @@ color: #989898
     border-top: 1px solid #565656;
   }
 }
+
+@media all and (max-width: 768px) {
+  .header {
+  
+    width: 100%;
+    justify-content: space-between;
+    height: 800px;
+    display: flex;
+    background: linear-gradient(0deg, rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)), url(/img/hall.jpg) no-repeat;
+    background-size: 100%;
+    
+}
+
+
+  .picture {
+     
+    max-width: 768px;
+    width: 100%;
+  }
+
+  .about,
+  .performances,
+  .stars {
+    display: flex;
+    width: 768px;
+    flex-direction: column;
+  }
+  .rate-stars {
+    width: 768px;
+    height: 550px;
+    background: url(img/Rectangle\ 28.jpg);
+    background-size: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .partners {
+    width: 768px;
+  }
+  .join {
+    width: 768px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer {
+    display:flex;
+    width:768px;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #565656;
+  }
+}
