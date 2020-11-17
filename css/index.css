@@ -18,7 +18,7 @@ width: 100%;
     justify-content: center;
     display: flex;
     background: linear-gradient(0deg, rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)), url(/img/hall.jpg) no-repeat;
-    background-size: 100%;
+    background-size: cover;
     
 }
 
@@ -28,13 +28,14 @@ width: 100%;
     width: 100%;
   }
    .navigation {
+     display:flex;
+     justify-content: space-between;
      width: 100%;
-   
+     flex-wrap:wrap;
      
    }
    .nav {
-       
-      
+     width:80%; 
     display: flex;
     flex-direction: row;
        list-style: none;
@@ -65,14 +66,14 @@ width: 100%;
    }
 
    .nav__tel {
-     
+    width:15%;
     font-family: Open Sans Condensed;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 22px;
     /* identical to box height */
-    
+    padding-top: 19px;
     text-align: right;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -615,29 +616,71 @@ line-height: 150%;
 color: #989898
 }
 
-@media all and (max-width: 992px) {
 
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 992px) {
+  .nav {
+    width: 100%;
+  }
+  .nav li {
+    font-size: 15px;
+
+}
+.nav__tel {
+  width: 18%;
+}
   .picture {
      
     max-width: 692px;
     width: 100%;
   }
-
+  .big-theatre_pos {
+    margin-top: 231px;
+    margin-bottom: 361px;
+  }
+  .big-theatre {
+    width:100%;
+  }
+  .theatre-img {
+    display: none;
+  }
+  .best {
+    width: 63%;
+}
   .about,
   .performances,
-  .stars {
+  {
     display: flex;
     width: 692px;
     flex-direction: column;
   }
+  .stars {
+    display: flex;
+    flex-direction: row;
+  }
   .rate-stars {
-    width: 692px;
+    width: 992px;
     height: 550px;
-    background: url(img/Rectangle\ 28.jpg);
+    background: url(/img/Rectangle_28.jpg) no-repeat;
     background-size: 100%;
     display: flex;
     flex-direction: row;
   }
+  .rating__text {
+    padding-top: 3%;
+    width: 45%;
+    
+}
   .partners {
     width: 692px;
   }
@@ -654,6 +697,15 @@ color: #989898
     border-top: 1px solid #565656;
   }
 }
+
+
+
+
+
+
+
+
+
 
 @media all and (max-width: 768px) {
   .header {
@@ -672,6 +724,9 @@ color: #989898
      
     max-width: 768px;
     width: 100%;
+  }
+  .theatre-img {
+    display: none;
   }
 
   .about,
