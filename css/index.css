@@ -629,6 +629,9 @@ color: #989898
 
 
 @media all and (max-width: 992px) {
+  .navigation {
+    justify-content: center;
+  }
   .nav {
     width: 100%;
   }
@@ -651,6 +654,10 @@ color: #989898
   .big-theatre {
     width:100%;
   }
+  .big-theatre__title {
+    text-align: center;
+    width: 100%;
+  }
   .theatre-img {
     display: none;
   }
@@ -658,7 +665,7 @@ color: #989898
     width: 63%;
 }
   .about,
-  .performances,
+  .performances
   {
     display: flex;
     width: 692px;
@@ -696,6 +703,36 @@ color: #989898
     justify-content: space-between;
     border-top: 1px solid #565656;
   }
+  .content {
+    flex-direction: column-reverse;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+}
+.inputs {
+  width: 100%;
+}
+.inputs__area {
+  margin-top: 4.5%;
+}
+.contacts {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.phone, .adress {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 50%;
+}
+.adress__info {
+  text-align: right;
+}
 }
 
 
@@ -715,46 +752,87 @@ color: #989898
     height: 800px;
     display: flex;
     background: linear-gradient(0deg, rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)), url(/img/hall.jpg) no-repeat;
-    background-size: 100%;
+    background-size: cover;
     
 }
-
-
+.navigation {
+  justify-content: flex-end;
+}
+  .nav {
+    display: none;
+  }
+  .nav__tel {
+    width: 20%;
+}
   .picture {
      
     max-width: 768px;
     width: 100%;
   }
+  .about_pos,
+  .performances_pos,
+  .rate-stars_pos,
+  .partners_pos,
+  .join_pos {
+    margin-top: 90px;
+  }
+  .big-theatre_pos {
+    margin-top: 169px;
+  }
+  .big-theatre {
+    justify-content: center;
+  }
+  .big-theatre__title,
+  .big-theatre__text {
+    text-align: center;
+  }
   .theatre-img {
     display: none;
   }
-
+  .partners {
+    width: 675px;
+}
   .about,
   .performances,
   .stars {
     display: flex;
-    width: 768px;
+    width: 675px;
     flex-direction: column;
+  }
+  .image-slider {
+    width: 675px;
+  }
+  .stars {
+    display: flex;
+    flex-direction: row;
   }
   .rate-stars {
     width: 768px;
     height: 550px;
-    background: url(img/Rectangle\ 28.jpg);
+    background: url(/img/Rectangle_28.jpg) no-repeat;
     background-size: 100%;
     display: flex;
     flex-direction: row;
   }
+  .rating__text {
+    padding-top: 4;
+    width: 45%;
+    font-size: 26px;
+}
+.years_pos {
+  margin-top: 7%;
+}
   .partners {
-    width: 768px;
+    width: 675px;
   }
   .join {
-    width: 768px;
+    width: 675px;
     flex-direction: row;
     justify-content: space-between;
   }
   .footer {
     display:flex;
-    width:768px;
+    width:675px;
     flex-direction: row;
     justify-content: space-between;
     border-top: 1px solid #565656;
